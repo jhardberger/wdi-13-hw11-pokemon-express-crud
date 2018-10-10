@@ -8,12 +8,14 @@ app.listen(3000, ()=>{
 });
 
 // database
-const Products = require('./products');
+const Pokemon = require('./pokemon');
 
 //-------------------------------------------------//
 
 //db route
 app.get('/pokemon', (req, res) => {
+	console.log('where are my pokemon');
+
 	res.send(Pokemon)
 });
 
