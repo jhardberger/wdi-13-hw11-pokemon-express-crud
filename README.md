@@ -53,7 +53,7 @@ const pokemon = [
   },
   {
     name: "Wartortle", 
-    img: "http://img.pokemondb.net/artwork/wartortle.jpg"
+    img: "http://img.pokemondseb.net/artwork/wartortle.jpg"
   }
 ];
 

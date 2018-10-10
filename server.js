@@ -1,4 +1,4 @@
-//server setup
+// server setup
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
@@ -12,10 +12,11 @@ const Pokemon = require('./pokemon');
 
 //-------------------------------------------------//
 
-//db route
+// index route
 app.get('/pokemon', (req, res) => {
-	console.log('where are my pokemon');
 
-	res.send(Pokemon)
+	res.render('index.ejs', {
+		pokemon: Pokemon
+	})
 });
 
