@@ -7,26 +7,15 @@
 		body{
 			font-family: 'Press Start 2P', cursive;
 		}
-
-		a{
-			text-decoration: none;
-		}
-
-		li{
-			padding: 5px 0 5px 0;
-		}
 	</style>
 </head>
 <body>
-	
-	<h1>Check Out The Pokemanz</h1>
+	<h1>Gotta Catch 'em All!</h1>
 	<br>
-	<ul>
-		<% pokemon.forEach((elem, i) => { %>
-			
-		<li><a href="http://localhost:3000/pokemon/<%=i%>"><%=elem.name%></a></li>
-
-		<%}); %>
-	</ul>
+	<div>
+		<h2><%=pokemon.name%></h2>
+		<br>
+		<img src="<%=pokemon.img%>"/>
+	</div>
 </body>
 </html>
