@@ -24,9 +24,15 @@
 	<ul>
 		<% pokemon.forEach((elem, i) => { %>
 			
-		<li><a href="http://localhost:3000/pokemon/<%=i%>"><%=elem.name%></a></li>
+		<li>
+			<a href="http://localhost:3000/pokemon/<%=i%>"><%=elem.name%></a><br>
+		</li>
 
 		<%}); %>
 	</ul>
+	<br>
+	<form action="/pokemon/new">
+		<input type="submit" value="Add a 'Mon">
+	</form>
 </body>
 </html>
