@@ -10,7 +10,12 @@ app.listen(3000, ()=>{
 // database
 const Pokemon = require('./pokemon');
 
-//-------------------------------------------------//
+/*-----------------------------------------------
+Unless I missed something major, I don't recall
+learning static? I took a look at it, but I'm 
+having trouble making sense of it, so I'm going
+to omit this for now...
+-----------------------------------------------*/
 
 // index route
 app.get('/pokemon', (req, res) => {
